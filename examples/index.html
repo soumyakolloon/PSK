@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head> 
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+  
+  <link rel="stylesheet" href="slicklib/jquery.slick.css" type="text/css"/>
+  <link rel="stylesheet" href="slicklib/slick.grid.css" type="text/css"/>
+  <link rel="stylesheet" href="slicklib/examples.css" type="text/css"/>
+  <link rel="stylesheet" href="slicklib/slick.pager.css"/>
+<link rel="stylesheet" href="slicklib/plugins-common.css" type="text/css"/>
+  <link rel="stylesheet" href="slicklib/plugins-excel-style.css" type="text/css"/>
+  <link rel="stylesheet" href="slicklib/theme01.css" type="text/css"/>
+<!-- Latest compiled and minified CSS -->
+
+
+<!-- Optional theme -->
+
+
+  <style>
+     #theme1{
+          
+      }
+      #theme1:active{
+          color:red;
+      }
+	  .top-loader{
+		width:350px; 
+		 margin-left:500px;
+		}
+  </style>
+</head>
+<body >
+ <div class="top-loader">
+ <img src="slicklib/toploader.gif" class="" title="Grid loading..."/>
+ </div>
+<div id="container" >
+ <div id="downslider" >
+    <div id="progresscontainer">
+      <div id="progressbar" ></div>
+    </div>
+  </div>
+    <div style="float: left; margin-left: 300px;">
+        <p style="" id="themelinks">
+            Switch to:  
+           
+        </p>
+		
+    </div>
+
+	
+<div id="icons_downslider">
+        <a href="#" id="downloader" >
+          <img src="slicklib/excel.png" class="downloadericons" title="Toggle search panel"/>
+        </a>
+        <img  src="slicklib/map.png" id="mapopen" class="downloadericons"/>
+        <img  src="slicklib/settings.png" class="downloadericons" id="sliderswitch" alt=""/> 
+      </div>
+	  	<div class="settings_holders" style="display:none;" id="clearFilter">
+	  <div class="demo">
+	<div id="clearallsearch"  onclick="clearAllFilters();">Clear Filters</div>
+	</div>
+		</div>
+	  
+<!--<div class="settings_holder">
+    <div class="demo" id="basic2">
+      <div class="switch-wrapper">
+          <input id="settings" type="checkbox" value="1" >
+      </div> 
+      <div id="clearallsearch"  onclick="clearAllFilters();">Clear Filters</div>
+      </div>
+      
+    </div>  -->
+    
+    <div class="settings_holder">
+    <div class="demo" id="basic2"> 
+        <div class="on-off" id="settings">
+          
+            <span class="off active" id="offid">Off</span>
+            <span class="on" id="onid">ON</span>
+         
+        </div>
+<!--<div class="on-off" >
+              <div class="switch-wrapper" id="settings">  
+              </div>
+        </div>-->
+          
+      <div id="clearallsearch"  onclick="clearAllFilters();">Clear Filters</div>
+      </div>
+      
+    </div>  
+    
+
+
+
+
+
+  <div id="myGrid"  > </div>
+  <div id="pager" ></div>
+  
+ 
+ 
+<script language="javascript" type="text/javascript">
+	
+	function clearAllFilters(){
+		// do nothing
+	}
+	// alert(window.location.href);
+    var urls = window.location.href;
+	//alert(urls);
+	var url = '' + urls;
+	if((url).indexOf('?') !== -1) {
+		
+		var queryString = (url).substr((url).indexOf('?') + 1); 
+
+		// "queryString" will now contain kerdesPost=fdasdas%20ad%20asd%20ad%20asdas
+
+		var value = (queryString.split('/'))[0];
+
+		// "value" will now contain fdasdas%20ad%20asd%20ad%20asdas
+
+		value = decodeURIComponent(value);
+
+		// "value" will now contain fdasdas ad asd ad asdas (unescaped value)
+	}
+
+//alert(value);
+    if(msieversion() === true){
+        var div = document.getElementById('themelinks');
+
+		div.innerHTML = div.innerHTML + '<a href="">Theme 1</a>';
+        //alert('YES');
+    }else{
+
+		var div = document.getElementById('themelinks');
+
+		div.innerHTML = div.innerHTML + "<a href='' onclick='location.href=this.href+'?theme=1'+theme;return false;' id='theme1'>Theme 1</a> &nbsp;";
+        
+        div.innerHTML = div.innerHTML + '<a href="javascript: history.go(-1)" >Back to classic</a> &nbsp;';
+     
+            
+        alert('No');
+    }
+    var theme = getParameterByName('?theme'); 
+	if(value === 'theme=1'){
+		var href='slicklib/theme01.css';
+		var myElement = document.querySelector("#theme1");
+		myElement.style.color = "#D93600";
+		includeCSSfile(href);  
+		document.getElementById("theme1").href="javascript:void(0);";  // prevent the double click on selected theme
+	}else if(theme === '2'){
+		document.getElementById('body').style.display = "none";
+	}else{
+   
+    if(theme === '1theme=31'){
+        var oldURL = document.referrer;
+alert(oldURL);
+         var myURL = document.location;
+document.location = myURL + "?theme=3";
+        //document.location=
+       // var url = window.location.href;    
+       var url=window.location.origin + window.location.pathname + window.location.hash;
+if (url.indexOf('?') > -1){
+    alert('1');
+   url += '&param=1';
+} else {
+    alert('2');
+   url += '?param=1';
+}
+window.location.href = url;
+   // var url=window.location.origin + window.location.pathname + window.location.hash;
+   // window.location.href = url;
+    }
+//
+   // var originalURL = "http://localhost:8080/slick/examples/?theme=1";
+    //var alteredURL = removeParam("theme=1", originalURL);
+} 
+function includeCSSfile(href) { 
+    var head_node = document.getElementsByTagName('head')[0];
+    var link_tag = document.createElement('link');
+    link_tag.setAttribute('rel', 'stylesheet');
+    link_tag.setAttribute('type', 'text/css');
+    link_tag.setAttribute('href', href);
+    head_node.appendChild(link_tag);
+}
+function getParameterByName(name) {
+    name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+        results = regex.exec(location.search);
+    return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+}
+function removeParam(key, sourceURL) {
+    var rtn = sourceURL.split("?")[0],
+        param,
+        params_arr = [],
+        queryString = (sourceURL.indexOf("?") !== -1) ? sourceURL.split("?")[1] : "";
+    if (queryString !== "") {
+        params_arr = queryString.split("&");
+        for (var i = params_arr.length - 1; i >= 0; i -= 1) {
+            param = params_arr[i].split("=")[0];
+            if (param === key) {
+                params_arr.splice(i, 1);
+            }
+        }
+        rtn = rtn + "?" + params_arr.join("&");
+    }
+    return rtn;
+}
+ 
+ function msieversion() {
+
+        var ua = window.navigator.userAgent;
+        var msie = ua.indexOf("MSIE ");
+
+        if (msie > 0 || !!navigator.userAgent.match(/Trident.*rv\:11\./))      // If Internet Explorer, return version number
+            //alert(parseInt(ua.substring(msie + 5, ua.indexOf(".", msie))));
+                return true;
+        else    
+        return false;
+// If another browser, return 0
+           // alert('otherbrowser'); 
+   return false;
+}
+        function addParameter(url, param, value) {
+    // Using a positive lookahead (?=\=) to find the
+    // given parameter, preceded by a ? or &, and followed
+    // by a = with a value after than (using a non-greedy selector)
+    // and then followed by a & or the end of the string
+    var val = new RegExp('(\\?|\\&)' + param + '=.*?(?=(&|$))'),
+        qstring = /\?.+$/;
+    
+    // Check if the parameter exists
+    if (val.test(url))
+    {
+        // if it does, replace it, using the captured group
+        // to determine & or ? at the beginning
+        return url.replace(val, '$1' + param + '=' + value);
+    }
+    else if (qstring.test(url))
+    {
+        // otherwise, if there is a query string at all
+        // add the param to the end of it
+        return url + '&' + param + '=' + value;
+    }
+    else
+    {
+        // if there's no query string, add one
+        return url + '?' + param + '=' + value;
+    }
+}
+ var dataPage = '<Computed Value>'; 
+
+var urlDB = '<Computed Value>';
+ var db = (urlDB  == '') ? '<Computed Value>' : urlDB;
+ var siteURL= '/' + db + '/' + dataPage; 
+var restrict  =  '<Computed Value>';
+document.getElementById('container').setAttribute('urlDB',urlDB );
+document.getElementById('container').setAttribute('db',db );
+document.getElementById('container').setAttribute('siteURL',siteURL);
+ </script>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+ <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+		
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script type="text/javascript"  data-main="slicklib/app.js" src="require.min.js"></script>
+</body>
+</html>

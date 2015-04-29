@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+<style type="text/css">
+html { height: 100% }
+body {
+	height: 100%;
+	margin: 0;
+	padding: 0
+}
+#map_canvas { height: 100% }
+</style>
+<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?v=3.9&sensor=false"></script>
+<script type="text/javascript" src="/<Computed Value>/jquery.min.js"></script>
+<script type="text/javascript" src="/<Computed Value>/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/<Computed Value>/google-maps/utility/markerclusterer.js"></script>
+<link rel="stylesheet" type="text/css" href="/<Computed Value>/google-maps/custom.css?OpenCssResource" />
+<script type="text/javascript" src="/<Computed Value>/google-maps/module-custom.js"></script>
+<script type="text/javascript" src="/<Computed Value>/common/util.js"></script>
+<script type="text/javascript" src="/<Computed Value>/common/language.js"></script>
+<script type="text/javascript">
+var dbPath='<Computed Value>';
+var language='<Computed Value>';
+</script>
+<Computed Value>
+<script type="text/javascript">
+var map;
+function initialize() {
+	var defaultCenter = new google.maps.LatLng(63.16929, 14.64224);
+	var mapOptions = {
+		center: defaultCenter ,
+		zoom: 5,
+		maxZoom: 20,
+		mapTypeControlOptions: {
+			style: google.maps.MapTypeControlStyle.DROPDOWN_MENU
+		},
+		scaleControl: true,
+		scaleControlOptions: {
+			position: google.maps.ControlPosition.BOTTOM_CENTER
+		},
+		mapTypeId: google.maps.MapTypeId.ROADMAP
+	};
+	map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions );
+	
+	var requestOptions = {
+		map: map,
+		data: 'gps-pos,docid'
+	};
+	var qsVal=getQSValue('docunid');
+	if (qsVal) {
+		requestOptions.method='doc';
+		requestOptions.docunid=qsVal;
+	} else {
+		
+		qsVal=getQSValue('getidscallback');
+		if (qsVal) {
+			requestOptions.method = 'docid-list';
+			requestOptions.arrDocid=window.opener[qsVal].call();
+		} else {
+			
+			qsVal=getQSValue('view');
+			if (qsVal) {
+				
+				requestOptions.method='view';
+				requestOptions.view=qsVal;
+				
+				qsVal= getQSValue('category');
+				if (qsVal) {
+					requestOptions.category = qsVal;
+					requestOptions.method = 'view-category';
+				}
+				qsVal= getQSValue('query');
+				if (qsVal) {
+					requestOptions.query = qsVal;
+					requestOptions.method = 'view-search';
+				}
+			} else {
+				alert('Error!\nMissing required argument "view"'); // if we do not catch the issue here we get errors when trying to retrieve marker data
+				return;
+			}
+			
+		}
+
+	}
+	loadMarkers(requestOptions);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+</head>
+<body>
+<div id="map_canvas"></div>
+</body>
+</html>

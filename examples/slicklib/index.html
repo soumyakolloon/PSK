@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link rel="stylesheet" href="slicklib/jquery.slick.css" type="text/css"/>
+  <link rel="stylesheet" href="slicklib/slick.grid.css" type="text/css"/>
+  <link rel="stylesheet" href="slicklib/examples.css" type="text/css"/>
+  <link rel="stylesheet" href="slicklib/slick.pager.css"/>
+<link rel="stylesheet" href="slicklib/plugins-common.css" type="text/css"/>
+  <link rel="stylesheet" href="slicklib/plugins-excel-style.css" type="text/css"/>
+
+
+</head>
+<body >
+ 
+<div id="container" >
+ <div id="downslider" >
+    <div id="progresscontainer">
+      <div id="progressbar" ></div>
+    </div>
+  </div>
+<p id="sliderswitch" >Verktyg</p><div id="icons_downslider">
+        <a href="#" id="downloader" >
+          <img src="slicklib/excel.png" class="downloadericons" title="Toggle search panel"/>
+        </a>
+        <img  src="slicklib/map.png" id="mapopen" class="downloadericons"/>
+      </div>
+<div class="settings_holder">
+    <div class="demo" id="basic2">
+      <div class="switch-wrapper">
+          <input id="settings" type="checkbox" value="1" >
+      </div> 
+      <div id="clearallsearch"  onclick="clearAllFilters();">Clear Filters</div>
+      </div>
+      
+    </div>  
+    
+
+
+
+
+
+  <div id="myGrid"  > </div>
+  <div id="pager" ></div>
+  
+ 
+
+<script>  
+ var dataPage = '<Computed Value>'; 
+
+var urlDB = '<Computed Value>';
+ var db = (urlDB  == '') ? '<Computed Value>' : urlDB;
+ var siteURL= '/' + db + '/' + dataPage; 
+var restrict  =  '<Computed Value>';
+document.getElementById('container').setAttribute('urlDB',urlDB );
+document.getElementById('container').setAttribute('db',db );
+document.getElementById('container').setAttribute('siteURL',siteURL);
+ </script>
+<script type="text/javascript"  data-main="slicklib/app.js" src="http://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.11/require.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,342 @@
+{
+"@rowlines": "8",
+"@direction": "0",
+"@spacing": "0",
+"@columns": "10",
+"@totalscolor": "#000000",
+"@extendlastcolumn": "false",
+"column": [
+{
+"@columnnumber": "0",
+"@width": "64",
+"@name": "Saljchef",
+"@title": "Ansvarig",
+"@format": "2",
+"@listseparator": "none",
+"@twistieimage": "/Kund/Preem/Preembygg.nsf/$PlusMinus?OpenImageResource",
+"@narrowdisplay": "top",
+"@tiledisplay": "top",
+"cfont": {
+"@style": "r",
+"@size": "10",
+"@color": "#000000",
+"@face": "Helvetica"
+},
+"hfont": {
+"@style": "r",
+"@size": "10",
+"@color": "#000000",
+"@face": "Helvetica"
+},
+"numberformat": {
+"@digits": "0",
+"@format": "general"
+},
+"datetimeformat": {
+"@show": "datetime",
+"@date": "yearmonth",
+"@time": "hourminutesecond",
+"@zone": "never"
+}
+},
+{
+"@columnnumber": "1",
+"@width": "80",
+"@name": "first",
+"@title": "Datum",
+"@format": "2",
+"@listseparator": "none",
+"@twistieimage": "/Kund/Preem/Preembygg.nsf/$PlusMinus?OpenImageResource",
+"@narrowdisplay": "top",
+"@tiledisplay": "top",
+"cfont": {
+"@style": "r",
+"@size": "10",
+"@color": "#000000",
+"@face": "Helvetica"
+},
+"hfont": {
+"@style": "r",
+"@size": "10",
+"@color": "#000000",
+"@face": "Helvetica"
+},
+"numberformat": {
+"@digits": "0",
+"@format": "general"
+},
+"datetimeformat": {
+"@show": "date",
+"@date": "yearmonth",
+"@time": "hourminute",
+"@zone": "never"
+}
+},
+{
+"@columnnumber": "2",
+"@width": "40",
+"@name": "second",
+"@title": "År",
+"@format": "2",
+"@listseparator": "none",
+"@twistieimage": "/Kund/Preem/Preembygg.nsf/$PlusMinus?OpenImageResource",
+"@narrowdisplay": "top",
+"@tiledisplay": "top",
+"cfont": {
+"@style": "r",
+"@size": "10",
+"@color": "#000000",
+"@face": "Helvetica"
+},
+"hfont": {
+"@style": "r",
+"@size": "10",
+"@color": "#000000",
+"@face": "Helvetica"
+},
+"numberformat": {
+"@digits": "0",
+"@format": "general"
+},
+"datetimeformat": {
+"@show": "date",
+"@date": "yearmonthday",
+"@time": "hourminutesecond",
+"@zone": "never",
+"@omitthisyear": "true"
+}
+},
+{
+"@columnnumber": "3",
+"@width": "40",
+"@name": "third",
+"@title": "Mån",
+"@format": "2",
+"@listseparator": "none",
+"@twistieimage": "/Kund/Preem/Preembygg.nsf/$PlusMinus?OpenImageResource",
+"@narrowdisplay": "top",
+"@tiledisplay": "top",
+"cfont": {
+"@style": "r",
+"@size": "10",
+"@color": "#000000",
+"@face": "Helvetica"
+},
+"hfont": {
+"@style": "r",
+"@size": "10",
+"@color": "#000000",
+"@face": "Helvetica"
+},
+"numberformat": {
+"@digits": "0",
+"@format": "general"
+},
+"datetimeformat": {
+"@show": "date",
+"@date": "yearmonthday",
+"@time": "hourminutesecond",
+"@zone": "never"
+}
+},
+{
+"@columnnumber": "4",
+"@width": "40",
+"@name": "fourth",
+"@title": "Dag",
+"@format": "2",
+"@listseparator": "none",
+"@narrowdisplay": "top",
+"@tiledisplay": "top",
+"cfont": {
+"@style": "r",
+"@size": "10",
+"@color": "#000000",
+"@face": "Helvetica"
+},
+"hfont": {
+"@style": "r",
+"@size": "10",
+"@color": "#000000",
+"@face": "Helvetica"
+},
+"numberformat": {
+"@digits": "0",
+"@format": "general"
+},
+"datetimeformat": {
+"@show": "date",
+"@date": "yearmonthday",
+"@time": "hourminutesecond",
+"@zone": "never"
+}
+},
+{
+"@columnnumber": "5",
+"@width": "64",
+"@name": "AnlNr",
+"@title": "AnlNr",
+"@format": "2",
+"@listseparator": "none",
+"@twistieimage": "/Kund/Preem/Preembygg.nsf/$PlusMinus?OpenImageResource",
+"@narrowdisplay": "top",
+"@tiledisplay": "top",
+"cfont": {
+"@style": "r",
+"@size": "10",
+"@color": "#000000",
+"@face": "Helvetica"
+},
+"hfont": {
+"@style": "r",
+"@size": "10",
+"@color": "#000000",
+"@face": "Helvetica"
+},
+"numberformat": {
+"@digits": "0",
+"@format": "general"
+},
+"datetimeformat": {
+"@show": "datetime",
+"@date": "yearmonthday",
+"@time": "hourminutesecond",
+"@zone": "never"
+}
+},
+{
+"@columnnumber": "6",
+"@width": "64",
+"@name": "Ort",
+"@title": "Ort",
+"@format": "2",
+"@listseparator": "none",
+"@twistieimage": "/Kund/Preem/Preembygg.nsf/$PlusMinus?OpenImageResource",
+"@narrowdisplay": "top",
+"@tiledisplay": "top",
+"cfont": {
+"@style": "r",
+"@size": "10",
+"@color": "#000000",
+"@face": "Helvetica"
+},
+"hfont": {
+"@style": "r",
+"@size": "10",
+"@color": "#000000",
+"@face": "Helvetica"
+},
+"numberformat": {
+"@digits": "0",
+"@format": "general"
+},
+"datetimeformat": {
+"@show": "datetime",
+"@date": "yearmonthday",
+"@time": "hourminutesecond",
+"@zone": "never"
+}
+},
+{
+"@columnnumber": "7",
+"@width": "64",
+"@name": "Gata",
+"@title": "Gata",
+"@format": "2",
+"@listseparator": "none",
+"@twistieimage": "/Kund/Preem/Preembygg.nsf/$PlusMinus?OpenImageResource",
+"@narrowdisplay": "top",
+"@tiledisplay": "top",
+"cfont": {
+"@style": "r",
+"@size": "10",
+"@color": "#000000",
+"@face": "Helvetica"
+},
+"hfont": {
+"@style": "r",
+"@size": "10",
+"@color": "#000000",
+"@face": "Helvetica"
+},
+"numberformat": {
+"@digits": "0",
+"@format": "general"
+},
+"datetimeformat": {
+"@show": "datetime",
+"@date": "yearmonthday",
+"@time": "hourminutesecond",
+"@zone": "never"
+}
+},
+{
+"@columnnumber": "8",
+"@width": "80",
+"@name": "AvstandStation",
+"@title": "Avstånd station",
+"@format": "2",
+"@listseparator": "none",
+"@narrowdisplay": "top",
+"@tiledisplay": "top",
+"cfont": {
+"@style": "r",
+"@size": "10",
+"@color": "#000000",
+"@face": "Helvetica"
+},
+"hfont": {
+"@style": "r",
+"@size": "10",
+"@color": "#000000",
+"@face": "Helvetica"
+},
+"numberformat": {
+"@digits": "0",
+"@format": "general",
+"@varying": "true"
+},
+"datetimeformat": {
+"@show": "datetime",
+"@date": "yearmonthday",
+"@time": "hourminutesecond",
+"@zone": "never"
+}
+},
+{
+"@columnnumber": "9",
+"@width": "40",
+"@name": "$3",
+"@title": "Antal",
+"@resize": "true",
+"@format": "2",
+"@totals": "true",
+"@listseparator": "none",
+"@narrowdisplay": "top",
+"@tiledisplay": "top",
+"cfont": {
+"@style": "r",
+"@size": "10",
+"@color": "#000000",
+"@face": "Helvetica"
+},
+"hfont": {
+"@style": "r",
+"@size": "10",
+"@color": "#000000",
+"@face": "Helvetica"
+},
+"numberformat": {
+"@digits": "0",
+"@format": "general",
+"@varying": "true"
+},
+"datetimeformat": {
+"@show": "datetime",
+"@date": "yearmonthday",
+"@time": "hourminutesecond",
+"@zone": "never"
+}
+}
+]
+}

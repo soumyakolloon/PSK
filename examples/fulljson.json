@@ -1,0 +1,240 @@
+{
+"@timestamp": "20150402T050638,55Z",
+"@toplevelentries": "1000",
+"viewentry": [
+{
+"@position": "1",
+"@unid": "0FD1D4B043BB74E0C1257E0B0042B2DE",
+"@noteid": "12A86A",
+"@siblings": "158570",
+"entrydata": [
+{
+"@columnnumber": "0",
+"@name": "Saljchef",
+"text": {
+"0": "Åtvidaberg"
+}
+},
+{
+"@columnnumber": "1",
+"@name": "Datum",
+"datetime": {
+"0": "20140515"
+}
+},
+{
+"@columnnumber": "2",
+"@name": "second",
+"datetime": {
+"0": "20140515"
+}
+},
+{
+"@columnnumber": "3",
+"@name": "third",
+"datetime": {
+"0": "20140515"
+}
+},
+{
+"@columnnumber": "4",
+"@name": "fourth",
+"datetime": {
+"0": "20140515"
+}
+},
+{
+"@columnnumber": "5",
+"@name": "AnlNr",
+"text": {
+"0": "31221"
+}
+},
+{
+"@columnnumber": "6",
+"@name": "Ort",
+"text": {
+"0": "Göteborg"
+}
+},
+{
+"@columnnumber": "7",
+"@name": "Gata",
+"text": {
+"0": "Arvid Lindmansgatan 18"
+}
+},
+{
+"@columnnumber": "8",
+"@name": "AvstandStation",
+"text": {
+"0": ""
+}
+},
+{
+"@columnnumber": "9",
+"@name": "$3",
+"text": {
+"0": ""
+}
+}
+]
+},
+{
+"@position": "2",
+"@unid": "98E82EC688E0C599C1257E0B0042B2DF",
+"@noteid": "12A86E",
+"@siblings": "158570",
+"entrydata": [
+{
+"@columnnumber": "0",
+"@name": "Saljchef",
+"text": {
+"0": "AnlNr Nilsson"
+}
+},
+{
+"@columnnumber": "1",
+"@name": "first",
+"datetime": {
+"0": "20140708"
+}
+},
+{
+"@columnnumber": "2",
+"@name": "second",
+"datetime": {
+"0": "20140708"
+}
+},
+{
+"@columnnumber": "3",
+"@name": "third",
+"datetime": {
+"0": "20140708"
+}
+},
+{
+"@columnnumber": "4",
+"@name": "fourth",
+"datetime": {
+"0": "20140708"
+}
+},
+{
+"@columnnumber": "5",
+"@name": "AnlNr",
+"text": {
+"0": "31585"
+}
+},
+{
+"@columnnumber": "6",
+"@name": "Ort",
+"text": {
+"0": "Kungsbacka"
+}
+},
+{
+"@columnnumber": "7",
+"@name": "Gata",
+"text": {
+"0": "Lantmannagatan 1"
+}
+},
+{
+"@columnnumber": "8",
+"@name": "AvstandStation",
+"text": {
+"0": "0.0298"
+}
+},
+{
+"@columnnumber": "9",
+"@name": "$3",
+"text": {
+"0": ""
+}
+}
+]
+},
+{
+"@position": "3",
+"@unid": "98E82EC688E0C599C1257E0B0042B2DF",
+"@noteid": "12A86E",
+"@siblings": "158570",
+"entrydata": [
+{
+"@columnnumber": "0",
+"@name": "Saljchef",
+"text": {
+"0": "Baaa Nilsson"
+}
+},
+{
+"@columnnumber": "1",
+"@name": "first",
+"datetime": {
+"0": "20140708"
+}
+},
+{
+"@columnnumber": "2",
+"@name": "second",
+"datetime": {
+"0": "20140708"
+}
+},
+{
+"@columnnumber": "3",
+"@name": "third",
+"datetime": {
+"0": "20140708"
+}
+},
+{
+"@columnnumber": "4",
+"@name": "fourth",
+"datetime": {
+"0": "20140708"
+}
+},
+{
+"@columnnumber": "5",
+"@name": "AnlNr",
+"text": {
+"0": "31585"
+}
+},
+{
+"@columnnumber": "6",
+"@name": "Ort",
+"text": {
+"0": "Kungsbacka"
+}
+},
+{
+"@columnnumber": "7",
+"@name": "Gata",
+"text": {
+"0": "Lantmannagatan 1"
+}
+},
+{
+"@columnnumber": "8",
+"@name": "AvstandStation",
+"text": {
+"0": "0.0298"
+}
+},
+{
+"@columnnumber": "9",
+"@name": "$3",
+"text": {
+"0": ""
+}
+}
+]
+}
+]
+}
